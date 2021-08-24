@@ -1,0 +1,401 @@
+/* global setting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Questrial', sans-serif;
+}
+
+img{
+    width: 100px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    padding-bottom: 20px;
+}
+
+/* p {
+    margin: 10px;
+} */
+/* #################################################################################################### */
+/* #################################################################################################### */
+/* main header style */
+#main-header {
+    z-index: 1;
+}
+/* nav container */
+nav {
+    display: flex;
+    justify-content: center;
+    /* background: #222831; */
+}
+/* navigation */
+.nav ul {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.nav ul li{
+    list-style-type: none;
+    padding-right: 80px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #222831;
+    /* text-transform: uppercase; */
+}
+.nav ul li a.hover-effect::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #FFD369;
+    transition: width 0.3s;
+}
+.nav ul li a.hover-effect:hover::after{
+    width: 100%;
+    transition: width 0.3s;
+}
+/* navigation icon */
+.icon ul {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.icon ul li{
+    list-style-type: none;
+    padding-left: 10px;
+}
+.icon ul li a{
+    text-decoration: none;
+    color: #222831;
+    /* text-transform: uppercase; */
+}
+/* #################################################################################################### */
+/* #################################################################################################### */
+/* apply some responsive rule */
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+    overflow: auto;
+    padding: 0 20px;
+}
+/* #################################################################################################### */
+/* #################################################################################################### */
+/* section under header */
+#section-1 {
+    background: url("https://bit.ly/38bwv7O") no-repeat center center/cover;
+    height: 100vh;
+}
+/* section 1 content */
+#section-1 .s1-content {
+    color: #ffffff;
+    text-align: left;
+    padding-top: 125px;
+    /* max-width: 1100px;
+    margin: 0 auto; */
+}
+#section-1 .s1-content h1 {
+    font-size: 60px;
+    line-height: 1em;
+    color: #ffffff;
+}
+.primary-text {
+    color: #FFD369;
+}
+#section-1 .s1-content p {
+    padding-bottom: 20px;
+    line-height: 1.7em;
+}
+
+/* btn learn more */
+#section-1 .s1-content a:hover {
+    background: #334756;
+    color: #FFD369;
+}
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: #334756;
+    padding: 13px 20px;
+    cursor: pointer;
+}
+.text-lead {
+    width: 40%;
+}
+/* #################################################################################################### */
+/* #########################################ABOUT SECTION############################################### */
+/* about css */
+#section-2 {
+    background: #fff;
+    height: 100vh;
+}
+#section-2 .s2-content {
+    display: flex;
+    color: #222831;
+    text-align: right;
+    padding-top: 100px ;
+    padding-bottom: 30px;
+}
+#section-2 .text {
+    display: flex;
+    flex-direction: column;
+}
+#section-2 .s2-content h1 {
+    font-size: 60px;
+    line-height: 1em;
+    color: #222831;
+}
+#section-2 .s2-content p {
+    /* padding-bottom: 20px; */
+    line-height: 1.7em;
+}
+#section-2 .s2-content img {
+    height: 400px;
+    width: 300px;
+    /* float: left; */
+    margin-right: 50px;
+}
+.s2-p {
+    text-align: justify;
+    text-indent: 30px;
+}
+.primary-text {
+    color: #FFD369;
+}
+
+/* #################################################################################################### */
+/* #################################################################################################### */
+/* WORKSECTION */
+#section-3 {
+    background: #fff;
+    height: 100vh;
+}
+#section-3 .s3-content {
+    display: flex;
+    color: #222831;
+    text-align: right;
+    padding-top: 50px;
+    justify-content: center;
+}
+#section-3 .s3-text {
+    display: flex;
+}
+#section-3 .s3-content h1 {
+    margin-right: 50px;
+    text-align: right;
+    font-size: 60px;
+    line-height: 1em;
+    color: #222831;
+}
+#section-3 .s3-content p {
+    /* padding-bottom: 20px; */
+    line-height: 1.7em;
+}
+.s3-p {
+    text-align: left;
+    padding-top: 35px;
+}
+.primary-text {
+    color: #FFD369;
+}
+/* columns */
+#section-3 .columns {
+    display: flex;
+    color: #222831;
+    text-align: center;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+#section-3 .columns img {
+    width: 250px;
+    height: 250px;
+}
+#section-3 .work-1 h1,
+#section-3 .work-2 h1,
+#section-3 .work-3 h1 {
+    padding-top: 10px;
+}
+.columns > div {
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+.columns > div:hover {
+    opacity: 0.7;
+    transform: scale(0.98);
+}
+
+/* #################################################################################################### */
+/* #################################################################################################### */
+/* section 4 CONTACT */
+#section-4 {
+    background: #fff;
+    height: 100vh;
+}
+#section-4 .contact {
+    margin:90px 0;
+    height:400px;
+    padding:50px;
+    color: #FFD369;
+}
+#section-4 .contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#section-4 .contact input[type="text"] {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height:50px;
+    text-indent: 10px;
+    border: 2px solid #FFD369;
+    border-radius: 10px;
+}
+#section-4 .contact textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:100%;
+    height:100px;
+    padding-top: 10px;
+    text-indent: 10px;
+    margin-top: 10px;
+    border: 2px solid #FFD369;
+    border-radius: 10px;
+}
+#section-4 .contact input[type="submit"] {
+    margin-top: 10px;
+    height:35px;
+    width:100px;
+    background:none;
+    color:#222831;
+    border:1px solid #222831;
+    border-radius: 10px;
+}
+#section-4 .contact input[type="submit"]:hover {
+    background:#222831;
+    color: #FFD369;
+    cursor: pointer;
+}
+.mail {
+    color: #222831;
+}
+/* #################################################################################################### */
+/* #################################################################################################### */
+/* #########PREVIOUS AND NEXT BUTTON ICON########## */
+.footer{
+    margin-top: auto;
+}
+#section-1 .prev-next,
+#section-2 .prev-next,
+#section-3 .prev-next {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+#section-1 .prev-next a,
+#section-2 .prev-next a,
+#section-3 .prev-next a,
+#section-4 .prev-next a{
+    text-decoration: none;
+    color: #FFD369;
+}
+#section-1 .prev-next a:hover,
+#section-2 .prev-next a:hover,
+#section-3 .prev-next a:hover,
+#section-4 .prev-next a:hover {
+    color: #334756;
+}
+.s1-next,
+.s2-next,
+.s3-next,
+.s4-next {
+    justify-content: flex-end;
+    
+}
+.s2-prev,
+.s3-prev,
+.s4-prev {
+    justify-content: flex-start;
+    
+}
+
+
+/* #################################################################################################### */
+/* #################################################################################################### */
+/* footer */
+footer {
+    display: flex;
+    flex: 0;
+    background: #EEEEEE;
+    overflow: hidden;
+    text-align: center;
+}
+.footer {
+    color: #222831;
+    padding-top: 18px;
+    height: 50px;
+}
+
+
+/* #################################################################################################### */
+/* #################################################################################################### */
+/* animations */
+/* :root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+} */
+
+.animate__animated.animate__backInLeft {
+    --animate-delay: 0.5s;
+    --animate-duration: 1s;
+}
+.animate__animated.animate__fadeInDown {
+    --animate-duration: 2s;
+    --animate-delay: 1s;
+}
+
+/* ########ICON####### */
+.facebook:hover {
+    color: rgb(0, 140, 255);
+    transform: scale(1.5) rotateZ(-5deg);
+  }
+.instagram:hover {
+    color: rgb(185, 0, 62);
+    transform: scale(1.5) rotateZ(-5deg);
+}
+.twitter:hover {
+    color: rgb(0, 63, 99);
+    transform: scale(1.5) rotateZ(-5deg);
+}
+.github:hover {
+    color: rgb(0, 88, 34);
+    transform: scale(1.5) rotateZ(-5deg);
+}
+.linkedin:hover {
+    color: rgb(0, 0, 26);
+    transform: scale(1.5) rotateZ(-5deg);
+}
+.envelope:hover {
+    color: rgb(250, 34, 34);
+    transform: scale(1.5) rotateZ(-5deg);
+}
